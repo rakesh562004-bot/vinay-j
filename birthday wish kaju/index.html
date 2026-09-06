@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="assets/birthday-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="music-toggle" class="music-btn">
+        <span id="music-icon">🎵</span>
+    </button>
+
+    <div class="main-background"></div>
+    <div class="overlay"></div>
+
+    <section id="screen-1" class="screen active">
+        <div class="content-wrapper">
+            <h1 class="glowing-text">Happy Birthday</h1>
+            
+            <div class="balloon-container">
+                <div class="photo-balloon"></div>
+                <div class="balloon-string"></div>
+            </div>
+
+            <button id="next-btn" class="pulse-btn">CLICK HERE 🎁</button>
+        </div>
+    </section>
+
+    <section id="screen-2" class="screen hidden">
+        <div id="celebration-container"></div> <div class="card">
+            <h2 class="card-title">A Special Birthday Wish For You ❤️</h2>
+            <div id="message-container" class="message-container">
+                </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
